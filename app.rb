@@ -8,7 +8,7 @@ class Battle < Sinatra::Base
 
     # Routes go here
     get '/' do
-        'Hello Battle!'
+        'Testing infrastructure working!'
     end
 
     run! if app_file == $0

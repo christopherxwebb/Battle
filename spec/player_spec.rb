@@ -1,5 +1,8 @@
 require 'player'
 
 describe Player do
-    it { is_expected.to be Player.new } #feel like this needs work!
+    let(:player_1) {Player.new("Christopher")}
+    it "should have a name" do
+        expect(player_1.name).to eq "Christopher"
+    end
 end

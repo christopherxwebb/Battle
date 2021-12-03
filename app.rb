@@ -1,5 +1,6 @@
 require 'sinatra/base'
 require 'sinatra/reloader'
+#require player class?
 
 class Battle < Sinatra::Base
     enable :sessions
@@ -13,13 +14,13 @@ get '/' do
 end
 
 post '/names' do
-    session[:player_1_name] = params[:player_1_name]
+    session[:player_1_name] = params[:player_1_name] #instead of session, use global variable $Player?
     session[:player_2_name] = params[:player_2_name]
     redirect '/play'
 end
 
 get '/play' do
-    @player_1_name = session[:player_1_name]
+    @player_1_name = session[:player_1_name] #and here?
     @player_2_name = session[:player_2_name]
     erb :play
 end

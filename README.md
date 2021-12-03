@@ -12,4 +12,20 @@ As Player 1,
 So I can see how close I am to winning
 I want to see Player 2's Hit Points
 
+As Player 1,
+So I can start to win a game of Battle,
+I want my attack to reduce Player 2's HP
+
+
+
+# Part of the rationale behind this challenge was to establish an MVC model, like so:
+
+    |  Incoming
+    V  request (view)
+_____________________
+|     Controller    |
+---------------------
+|       Model       |
+_____________________
+
 
